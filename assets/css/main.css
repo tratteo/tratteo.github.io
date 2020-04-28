@@ -879,6 +879,7 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		padding-top: 2rem;
 	}
 
 		ul.icons li {
@@ -1507,7 +1508,7 @@ input, select, textarea {
 
 		/* width */
 ::-webkit-scrollbar {
-	width: 8px;
+	width: 10px;
   }
   
   /* Track */

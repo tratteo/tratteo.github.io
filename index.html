@@ -10,8 +10,10 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 		<link rel="shortcut icon" type="image/png" href="assets/media/icon.ico"/>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -84,23 +86,6 @@
 								</ul>
 								</article>
 
-								<script>
-									var coll = document.getElementsByClassName("collapsible");
-									var i;
-
-									for (i = 0; i < coll.length; i++) {
-									coll[i].addEventListener("click", function() {
-										this.classList.toggle("active");
-										var content = this.nextElementSibling;
-										if (content.style.maxHeight){
-										content.style.maxHeight = null;
-										} else {
-										content.style.maxHeight = content.scrollHeight + "px";
-										}
-									});
-									}
-								</script>
-
 						<!-- Work -->
 							<article id="work">
 								<h2 class="major">Work</h2>
@@ -130,13 +115,6 @@
 								</ul>
 							</article>
 					</div>
-					<script>
-						function sendEmail() {
-							var name = document.getElementById('name').value;
-							var message = document.getElementById('message').value;
-							window.open('mailto:bltmtt@gmail.com?subject=' + name + '&body=' + message);
-						}
-						</script>
 				<!-- Footer -->
 					<footer id="footer">
 						<p class="copyright">&copy; Matteo Beltrame Bsc. Computer Engineering</p>
@@ -150,11 +128,9 @@
 				<source src="assets/media/background.mp4" type="video/mp4">
 			  </video>
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+		<script src="assets/js/custom-utils.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>

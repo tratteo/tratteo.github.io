@@ -45,36 +45,61 @@
 									<!--<span class="image main"><img src="images/pic01.jpg" alt="" /></span>-->
 								<ul>
 									<li>
-										<ul class="icons">
+										<ul class="collapsible">
 											<li><h3>Genetic trained Neural Networks</h3></li>
 											<li><a href="https://github.com/tratteo/GeneticNN" target="_blank" class="icon fa-code"><span class="label">GitHub</span></a></li>
 										</ul>
-										<p>In this project the Neural Network has been applied to a self-driving vehicle, as a consequence each car is an individual of the population. The scope of this work is to obtain a human control independent driving car, capable of adapting to different paths based on a defined Genetic Algorithm fitness function</p>
+										<div class="content">
+											<p>In this project the Neural Network has been applied to a self-driving vehicle, as a consequence each car is an individual of the population. The scope of this work is to obtain a human control independent driving car, capable of adapting to different paths based on a defined Genetic Algorithm fitness function</p>
+										</div>
 									</li>
 									<li>
-										<ul class="icons">
+										<ul class="collapsible">
 											<li><h3>Gravitor</h3></li>
 											<li><a href="https://github.com/tratteo/Gravitor" target="_blank" class="icon fa-code"><span class="label">GitHub</span></a></li>
 											<li><a href="https://play.google.com/store/apps/details?id=com.NAG.Gravitor" target="_blank" class="icon fa-download"><span class="label">PlayStore</span></a></li>
 										</ul>
-										<p>Indie smartphone game implementing real physical laws of gravitation and Einstein's relativity theory</p>
+										<div class="content">
+											<p>Indie smartphone game implementing real physical laws of gravitation and Einstein's relativity theory</p>
+										</div>
 									</li>
 									<li>
-										<ul class="icons">
+										<ul class="collapsible">
 											<li><h3>IOT Home Server</h3></li>
 											<li><a href="https://github.com/tratteo/RackServer" target="_blank" class="icon fa-code"><span class="label">GitHub</span></a></li>
 										</ul>
-										<p>IOT multithreaded server for home domotic project</p>
+										<div class="content">
+											<p>IOT multithreaded server for home domotic project</p>
+										</div>
 									</li>
 									<li>
-										<ul class="icons">
+										<ul class="collapsible">
 											<li><h3>IOT Android App</h3></li>
 											<li><a href="https://github.com/tratteo/HomeApp" target="_blank" class="icon fa-code"><span class="label">GitHub</span></a></li>
 										</ul>
-										<p>Android app interface for the IOT domotic project</p>
+										<div class="content">
+											<p>Android app interface for the IOT domotic project</p>
+										</div>
 									</li>
 								</ul>
 								</article>
+
+								<script>
+									var coll = document.getElementsByClassName("collapsible");
+									var i;
+
+									for (i = 0; i < coll.length; i++) {
+									coll[i].addEventListener("click", function() {
+										this.classList.toggle("active");
+										var content = this.nextElementSibling;
+										if (content.style.maxHeight){
+										content.style.maxHeight = null;
+										} else {
+										content.style.maxHeight = content.scrollHeight + "px";
+										}
+									});
+									}
+								</script>
 
 						<!-- Work -->
 							<article id="work">

@@ -7,6 +7,8 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -171,7 +173,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2rem 0;
+		margin: 1.5rem 0 1rem 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -180,7 +182,7 @@ input, select, textarea {
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
 		text-transform: uppercase;
-		letter-spacing: 0.2rem;
+		letter-spacing: 0.15rem;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -195,7 +197,7 @@ input, select, textarea {
 			width: -ms-max-content;
 			width: max-content;
 			padding-bottom: 0.5rem;
-			margin: 0 0 2rem 0;
+			margin: 0 0 3rem 0;
 		}
 
 	h1 {
@@ -676,7 +678,7 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			margin: 2.5rem 0;
+			margin: 0.5rem 0;
 			width: 100%;
 		}
 
@@ -715,7 +717,7 @@ input, select, textarea {
 	ul {
 		list-style: circle;
 		margin: 0 0 2rem 0;
-		padding-left: 1em;
+		padding-left: 2em;
 	}
 
 		ul li {
@@ -874,17 +876,20 @@ input, select, textarea {
 		}
 
 		.collapsible_content {
-			padding: 0 18px;
+			padding: 0 0px;
 			max-height: 0;
 			overflow: hidden;
 			transition: max-height 0.2s ease-out;
+		  }
+		  .collapsible_content.ul {
+			margin: 0;
 		  }
 
 	ul.collapsible{
 		cursor: pointer;
 		list-style: none;
 		padding-left: 0;
-		padding-top: 2rem;
+		padding-top: 1rem;
 		overflow: hidden;
 		transition: max-height 0.2s ease-out;
 	}
@@ -899,6 +904,10 @@ input, select, textarea {
 		margin-left: 5px;
 	  }
 	  
+	  ul.collapsible.active{
+		  margin-bottom: 0;	 
+	  }
+
 	  ul.collapsible.active::before {
 		font-family: FontAwesome;
 		font-weight:900;
@@ -908,11 +917,12 @@ input, select, textarea {
 
 	ul.collapsible h3{
 		width: fit-content;
+
 	}
 
 	ul.collapsible li {
 		display: inline-block;
-		padding: 0 0.75em 0 0;
+		padding: 0 0.5em 0 0;
 	}
 
 		ul.collapsible li:last-child {
@@ -1611,7 +1621,7 @@ input, select, textarea {
 		flex-direction: column;
 		position: relative;
 		max-width: 100%;
-		height: 50rem;
+		height: 20rem;
 		z-index: 3;
 	}
 
@@ -1627,6 +1637,10 @@ input, select, textarea {
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
+			-moz-align-items: center;
+			-webkit-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
 			width: 85rem;
 			max-width: 100%;
 			background-color: rgba(27, 31, 34, 0.85);
@@ -1640,6 +1654,8 @@ input, select, textarea {
 				-ms-transform: translateY(0);
 				transform: translateY(0);
 				opacity: 1;
+				padding-top: 3rem;
+				padding-left: 2.5rem;
 			}
 
 			#main article .close {
@@ -1648,7 +1664,7 @@ input, select, textarea {
 				top: 0;
 				right: 0;
 				width: 4rem;
-				height: 4rem;
+				height: 1rem;
 				cursor: pointer;
 				text-indent: 4rem;
 				overflow: hidden;

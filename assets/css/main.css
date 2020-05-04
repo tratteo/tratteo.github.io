@@ -905,9 +905,6 @@ input, select, textarea {
 		margin-left: 5px;
 	  }
 	  
-	  ul.collapsible.active{
-		  margin-bottom: 1rem;	 
-	  }
 
 	  ul.collapsible.active::before {
 		font-family: FontAwesome;
